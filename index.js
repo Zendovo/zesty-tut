@@ -5,9 +5,8 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   setTimeout(() => {
     bot.user.setActivity(`bantu | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
-  }, 20)
+  }, 100)
   bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
-  }, 20)
 });
 
 bot.on("message", async message => {
