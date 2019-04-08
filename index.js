@@ -5,7 +5,10 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   setTimeout(() => {
     bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
-  }, 3)
+  }, 1000)
+  bot.guilds.forEach((guild, id) => {
+    console.log(`[SERVER] [${guild.memberCount}] ${guild.name} (${guild.id}) | Joined: ${guild.joinedAt.toString()}\n`)
+  });
   bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
 });
 
