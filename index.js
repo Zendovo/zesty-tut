@@ -7,7 +7,22 @@ bot.on("ready", async () => {
   setTimeout(() => {
     bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 1000)
-  bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
+  bot.user.setStatus('available')
+
+    bot.user.setPresence({
+
+        game: {
+
+            name: 'QQ SPEEDM',
+
+            type: "STREAMING",
+
+            url: "https://www.twitch.tv/"
+
+        }
+
+    });
+
 });
 
 bot.on("message", async message => {
