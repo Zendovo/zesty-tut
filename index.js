@@ -6,8 +6,8 @@ bot.on("ready", async () => {
   bot.user.setActivity("https://discord.gg/DPQgeFT");
   setTimeout(() => {
     bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
-  }, )
-  bot.user.setStatus('available')bot.user.setPresence({game: {name: 'QQ SPEEDM',type: "STREAMING",url: "https://www.twitch.tv/"}});
+  }, 0)
+  bot.user.setStatus("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
 });
 
 bot.on("message", async message => {
