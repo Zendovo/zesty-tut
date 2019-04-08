@@ -3,7 +3,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("https://discord.gg/DPQgeFT"});
+  setActivity({type: "LISTENING", "WATCHING", "PLAYING", "ETC."});
   setTimeout(() => {
     bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 1000)
