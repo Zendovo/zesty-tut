@@ -9,10 +9,6 @@ bot.on("ready", async () => {
   bot.user.setActivity(`New update QQ!`);
 });
 
-setTimeout(() => {
-    bot.user.setActivity(`update new! | ${bot.guilds.array().length} User`, {type: "STREAMING"});
-  }, 20000)
-
 
 bot.on("message", async message => {
 
