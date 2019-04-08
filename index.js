@@ -10,7 +10,6 @@ setTimeout(() => {
     bot.user.setActivity(`update new! | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 20000)
  bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
-
 });
 
 
