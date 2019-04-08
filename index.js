@@ -6,7 +6,7 @@ bot.on("ready", async () => {
   bot.user.setActivity("Digunakan server...", {type: "STREAMING"})
   console.log(`${bot.user.username} is online!`);
   setTimeout(() => {
-    bot.user.setActivity(`prefix - | ${bot.guilds.array().length} server`, {type: "STREAMING,WATCHING"});
+    bot.user.setActivity(`prefix - | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 20000)
 
 });
