@@ -10,6 +10,8 @@ bot.on("ready", async () => {
 setTimeout(() => {
     bot.user.setActivity(`update new! | ${bot.guilds.array().length} User`, {type: "WATCHING"});
   }, 20000)
+   bot.user.setActivity(`${bot.guilds.array().length} server`, {type: "STREAMING"});
+  }, 20000)
 
 
 bot.on("message", async message => {
