@@ -4,7 +4,7 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   setTimeout(() => {
-    bot.user.setActivity(`bantu | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
+    bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 100)
   bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
 });
