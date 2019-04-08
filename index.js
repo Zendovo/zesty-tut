@@ -3,11 +3,14 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
+  client.on("disconnected", () => {
+    client.user.setStatus("offline");
+    console.log(client.user); //returns the current user
   bot.user.setActivity("https://discord.gg/DPQgeFT");
   setTimeout(() => {
-    bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type=3 "WATCHING"});
+    bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 0)
-  bot.user.setActivity("Digunakan server", {type= 2 "STREAMING", url: "https://twitch.tv/"})
+  bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
 
 });
 
