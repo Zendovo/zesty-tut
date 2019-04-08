@@ -4,7 +4,7 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   client.user.setActivity('YouTube', { type: 'WATCHING' })
-  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
+  .then(presence => console.log(`Activity set to ${presence.game?presence.game.name:'user'}`))
   .catch(console.error);
   bot.user.setActivity(`New update QQ!`);
 });
