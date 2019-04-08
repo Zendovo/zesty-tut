@@ -8,7 +8,7 @@ bot.on("ready", async () => {
 });
 
 setTimeout(() => {
-    bot.user.setActivity(`update new! | ${bot.guilds.array().length} User`, {type: "STREAMING"});
+    bot.user.setActivity(`update new! | ${bot.guilds.array().length} User`, {type: "LISTENING", "WATCHING","STREAMING"});
   }, 20000)
 
 
