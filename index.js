@@ -4,7 +4,8 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity(`sorry not for a repair update!`);
-  bot.change_presence(game=discord.Game(name="https://discord.gg/DPQgeFT", type=3))
+  bot.user.setActivity("Gunakan Di server...", {type: "STREAMING", url: "https://twitch.tv/freakinghulk"})
+  // Post bot stats
 });
 
 bot.on("message", async message => {
