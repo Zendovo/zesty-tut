@@ -5,7 +5,10 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity(`New update QQ!`);
 });
-bot.user.setActivity("Digunakan server...", {type: "STREAMING"})
+
+setTimeout(() => {
+    bot.user.setActivity(`Digunakan update new! | ${bot.guilds.array().length} server`, {type: "WATCHING"});
+  }, 20000)
 
 
 bot.on("message", async message => {
