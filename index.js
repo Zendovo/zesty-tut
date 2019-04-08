@@ -8,7 +8,7 @@ bot.on("ready", async () => {
   //bot.user.setGame("on SourceCade!");
 });
   setTimeout(() => {
-    bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
+    bot.user.setGame(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 20000)
   bot.user.setActivity("Digunakan server", {type: "STREAMING"})
 
