@@ -25,4 +25,14 @@ bot.on("message", async message => {
   }
 });
 
+let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}Halo`){
+    message.channel.send("@mention@ Halo Jake juga");
+  }
+});
+
 bot.login(process.env.token);
