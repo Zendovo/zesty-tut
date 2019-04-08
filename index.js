@@ -3,7 +3,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`on ${bot.users.size} Users! `, {type: 'STREAMING'});
+  bot.user.setActivity(`Activate ${bot.users.size} Users! `, {type: 'STREAMING'});
   bot.user.setStatus('available')
 });
 
