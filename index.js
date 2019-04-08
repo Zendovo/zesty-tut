@@ -5,7 +5,7 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity("https://discord.gg/DPQgeFT");
   setTimeout(() => {
-    bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
+    bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "STREAMING","WATCHING"});
   }, 0)
   bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
 
