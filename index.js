@@ -3,12 +3,11 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  user.setActivity('YouTube', { type: 'WATCHING' })
+  client.user.setActivity('YouTube', { type: 'WATCHING' })
   .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
   bot.user.setActivity(`New update QQ!`);
 });
-
 
 bot.on("message", async message => {
 
