@@ -3,7 +3,6 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity('YouTube', { type=1 = 'WATCHING'})
   bot.user.setActivity(`New update QQ!`);
 });
 
