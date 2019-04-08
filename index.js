@@ -2,9 +2,8 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
-  setTimeout(() => {
-  bot.user.setActivity("Digunakan server...", {type: "STREAMING"})
   console.log(`${bot.user.username} is online!`);
+  bot.user.setActivity("Digunakan server...", {type: "STREAMING"})
   setTimeout(() => {
     bot.user.setActivity(`prefix - | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 20000)
