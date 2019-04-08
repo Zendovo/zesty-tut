@@ -6,12 +6,12 @@ bot.on("ready", async () => {
   bot.user.setActivity(`New update QQ!`);
 });
 
-bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
+setTimeout(() => {
+    bot.user.setActivity(`update new! | ${bot.guilds.array().length} server`, {type: "WATCHING"});
+  }, 20000)
+ bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
 
 });
-setTimeout(() => {
-    bot.user.setActivity(`Digunakan update new! | ${bot.guilds.array().length} server`, {type: "WATCHING"});
-  }, 20000)
 
 
 bot.on("message", async message => {
