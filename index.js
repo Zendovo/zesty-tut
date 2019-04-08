@@ -7,7 +7,7 @@ bot.on("ready", async () => {
   setTimeout(() => {
     bot.user.setActivity(`bantu | ${bot.guilds.array().length} server`, {type: "WATCHING"});
   }, 20000)
-  bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
+  bot.user.setActivity("Digunakan server", {type: "STREAMING"})
 
 });
 
