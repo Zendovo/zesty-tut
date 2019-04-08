@@ -5,11 +5,6 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setPresence({ game: { name: 'with depression', type: "streaming", url: "https://www.twitch.tv/"}});
   bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'with depression',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/"
 });
 
 bot.on("message", async message => {
