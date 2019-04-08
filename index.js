@@ -6,6 +6,9 @@ bot.on("ready", async () => {
   bot.user.setActivity(`sorry not for a repair update!`);
   bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
   // Post bot stats
+  setTimeout(() => {
+    bot.user.setActivity(`for help | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
+  }, 20000)
 });
 
 bot.on("message", async message => {
