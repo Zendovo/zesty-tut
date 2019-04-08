@@ -4,7 +4,7 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity(`sorry not for a repair update!`);
-  bot.user.setActivity("Gunakan server!", {type: "STREAMING", url: "https://facebook.com/teguhinin"})
+  bot.user.setActivity("Gunakan server!", {type: "STREAMING", url: ""})
   // Post bot stats
 });
 
