@@ -4,9 +4,9 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   setTimeout(() => {
-    bot.user.setActivity(`https://discord.gg/DPQgeFT | ${bot.guilds.array().length} server`, {type: "WATCHING"});
+    bot.user.setActivity(`https://discord.gg/DPQgeFT | ${bot.guilds.array().length} server`, {type: "STREAMING"});
   }, 20000)
-  bot.user.setActivity("Digunakan server", {type: "STREAMING"})
+  bot.user.setActivity("Digunakan server...", {type: "STREAMING"})
 
 });
 
