@@ -3,12 +3,11 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`sorry not for a repair update!`);
+  setTimeout(() => {
+    bot.user.setActivity(`for h!help | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
+  }, 20000)
   bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
   // Post bot stats
-  setTimeout(() => {
-    bot.user.setActivity(`for help | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
-  }, 20000)
 });
 
 bot.on("message", async message => {
