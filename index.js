@@ -7,7 +7,7 @@ bot.on("ready", async () => {
     bot.user.setActivity(`bantu | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
   }, 20)
   bot.user.setActivity("Digunakan server", {type: "STREAMING", url: "https://twitch.tv/"})
-  // Post bot stats
+  }, 20)
 });
 
 bot.on("message", async message => {
