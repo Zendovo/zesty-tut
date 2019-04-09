@@ -3,8 +3,13 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  <Client>.user.setActivity("QQ UPDATE NEW!", {type: "<WATCHING, PLAYING, STREAMING, LISTENING>"});
-  bot.user.setStatus('available')
+   // Set bot status to: "Playing with JavaScript"
+    bot.user.setActivity("with JavaScript")
+
+    // Alternatively, you can set the activity to any of the following:
+    // PLAYING, STREAMING, LISTENING, WATCHING
+    // For example:
+    // client.user.setActivity("User", {type: "WATCHING"})
 });
 
 bot.on("message", async message => {
