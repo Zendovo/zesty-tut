@@ -9,7 +9,7 @@ bot.on("ready", async () => {
     // Alternatively, you can set the activity to any of the following:
     // PLAYING, STREAMING, LISTENING, WATCHING
     // For example:
-    // client.user.setActivity("User", {type: "WATCHING"})
+    // bot.user.setActivity("User", {type: "WATCHING"})
 });
 
 bot.on("message", async message => {
