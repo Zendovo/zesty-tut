@@ -3,8 +3,9 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-    bot.user.setActivity("with JavaScript")
-    // bot.user.setActivity("User", {type: "WATCHING"})
+    bot.user.setActivity("New! SERVER QQ BOT")
+    bot.user.setActivity("server up", {type: "STREAMING"})
+    bot.user.setActivity(`Activate ${bot.users.size} Users! `, {type: "LISTENING"});
 });
 
 bot.on("message", async message => {
